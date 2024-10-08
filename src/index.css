@@ -7,7 +7,7 @@
 
 
 body {
- background-color: rgb(203, 205, 233);
+ background-color: #fcfcfc;
  
 }
 
@@ -30,4 +30,38 @@ position: relative;
   place-items: center;
   top: -40%;
   left: 70%;
+}
+
+.mobile-navbar-btn{
+  display:none;
+  background-color: transparent;
+  cursor: pointer;
+  border:none;
+}
+
+/* .mobile-nav-icon[name="close-outline"]{
+display: none;
+
+} */
+
+
+
+.services{
+  background-color: #57585c;
+}
+
+
+@media (max-width:650px) {
+
+.mobile-navbar-btn{
+  display: inline-block;
+  z-index: 99;
+
+}
+.mobile-navbar-icon{
+  font-size: 4.2rem;
+  color: black;
+}
+
+  
 }
