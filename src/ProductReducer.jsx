@@ -1,33 +1,48 @@
-const ProductReducer=(state,action)=>{
-if(action==='set-loading'){
-    return {
-        ...state,
-        isLoading:true,
+const ProductReducer = (state, action) => {
+    // if (action.type === "SET_LOADING") {
+    //   return {
+    //     ...state,
+    //     isLoading: true,
+    //   };
+    // }
+  
+    // if (action.type === "API_ERROR") {
+    //   return {
+    //     ...state,
+    //     isLoading: false,
+    //     isError: true,
+    //   };
+    // }
+  
+    switch (action.type) {
+      case "SET_LOADING":
+        return {
+          ...state,
+          isLoading: true,
+        };
+  
+      case "SET_API_DATA":
+        const featureData = action.payload.filter((curElem) => {
+          return curElem.featured === true;
+        });
+  
+        return {
+          ...state,
+          isLoading: false,
+          products: action.payload,
+          featureProducts: featureData,
+        };
+  
+      case "API_ERROR":
+        return {
+          ...state,
+          isLoading: false,
+          isError: true,
+        };
+  
+      default:
+        return state;
     }
-}
-
-if(action=== 'API-error'){
-    return {
-        ...state,
-        isLoading:false,
-        isError:true,
-    }
-
-}
-if(action=== 'my-api-products'){
-   const featurePart= action.payload.filter((currElem)=>{
-    return currElem.featured===true;
-   })
-   return {
-    ...state,
-    isLoading:false,
-    data:action.payload,
-    featureData:featurePart,
-   }
-}
-
-
-
-}
-
-export default ProductReducer;
+  };
+  
+  export default ProductReducer;

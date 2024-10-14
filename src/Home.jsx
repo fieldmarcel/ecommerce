@@ -4,12 +4,12 @@ const Home = () => {
   return (
     <div className="flex sm:flex-row flex-col w-screen h-screen overflow-hidden">
       {/* Left Part: Single Image taking half the viewport width */}
-      <div className="sm:w-1/2 w-full border-2 border-red-600 h-full overflow-hidden">
+      <div className="sm:w-1/2 w-full  h-full overflow-hidden">
         <img src="3.jpg" alt="" className="w-full h-full object-cover" />
       </div>
 
       {/* Right Part: Multiple Images and Video */}
-      <div className="sm:w-1/2 w-full flex flex-col justify-between p-4 border border-black">
+      <div className="sm:w-1/2 w-full flex flex-col justify-between p-4 ">
         {/* Row with two images */}
         <div className="flex gap-4 overflow-hidden">
           <img src="1.jpg" className="w-1/2 object-cover" alt="Image 1" />

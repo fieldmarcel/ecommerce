@@ -6,7 +6,7 @@ import { RiSecurePaymentLine } from "react-icons/ri";
 
 const Services = () => {
   return (
-    <div className="container  border border-black mx-auto px-4 py-6">
+    <div className="container   mx-auto px-4 py-6">
       {/* Main Box for All Services */}
       <div className=" services bg-white  p-6 rounded-lg text-center flex  flex-col sm:flex-row sm:justify-center items-center gap-6 sm:gap-8">
         

@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
   return (
     <div className="container mx-auto p-8">
-      <div className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+      <div className="w-1/3  mx-auto bg-white p-6 rounded-lg shadow-lg">
         <form action="https://getform.io/f/bejywqka" method="POST" className="space-y-6">
           {/* Username Input */}
           <div>
