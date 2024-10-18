@@ -12,8 +12,8 @@ const Home = () => {
       <div className="sm:w-1/2 w-full flex flex-col justify-between p-4 ">
         {/* Row with two images */}
         <div className="flex gap-4 overflow-hidden">
-          <img src="1.jpg" className="w-1/2 object-cover" alt="Image 1" />
-          <img src="2.jpg" className="w-1/2 object-cover" alt="Image 2" />
+          <img src="1.jpg" className="w-1/2 object-cover" alt="photos " />
+          <img src="2.jpg" className="w-1/2 object-cover" alt="photos " />
         </div>
 
         {/* Video Section */}

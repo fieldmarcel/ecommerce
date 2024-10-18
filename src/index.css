@@ -21,6 +21,17 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+
+.navbar-link-mob{
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+}
+.navbar-link-mob
+
 .featured{
   font-family: "Outfit", sans-serif;
 
@@ -74,7 +85,6 @@ display: none;
 
 
 .services{
-  background-color: #57585C;
 }
 
 

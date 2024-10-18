@@ -9,16 +9,16 @@ const Trusted = () => {
 
         <div className=" flex sm:flex-row sm:gap-x-4">
           <div className="slide">
-            <img src="image3.png"></img>
+            <img src="image3.png" alt="photos"></img>
           </div>
           <div className="slide">
-            <img src="image3.png"></img>
+            <img src="image3.png"  alt="photos"></img>
           </div>
           <div className="slide">
-            <img src="image3.png"></img>
+            <img src="image3.png"  alt="photos"></img>
           </div>
           <div className="slide">
-            <img src="image3.png"></img>
+            <img src="image3.png"  alt="photos"></img>
           </div>
         </div>
       </div>

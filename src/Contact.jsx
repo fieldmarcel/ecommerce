@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
   return (
     <div className="container mx-auto p-8">
-      <div className="w-1/3  mx-auto bg-white p-6 rounded-lg shadow-lg">
+      <div className="sm:w-1/3  mx-auto bg-white p-6 rounded-lg shadow-lg">
         <form action="https://getform.io/f/bejywqka" method="POST" className="space-y-6">
           {/* Username Input */}
           <div>
@@ -43,11 +43,11 @@ const Contact = () => {
             <textarea
         name="message"
         cols={30}
-              rows={5}
-              placeholder="Enter your message"
+              rows={3}
+              placeholder="  Enter your message"
               required
               autoComplete="off"
-              className="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full mt-1  border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             ></textarea>
           </div>
 

@@ -1,7 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
-const Product = ({ id, name, image, price, category }) => {
+import Currency from "./helpers/Currrency";
+const Product = ({ id, name, image,price, category }) => {
+ 
   return (
     <div className="bg-white border-2 border-gray-200 rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-y-105 hover:shadow-2xl">
       <NavLink to={`/singleproduct/${id}`}>
@@ -15,9 +16,12 @@ const Product = ({ id, name, image, price, category }) => {
             {category}
           </figcaption>
         </figure>
-        <div className="p-4">
+        <div className="p-4 flex  justify-between items-center">
           <h3 className="text-lg font-bold text-gray-800">{name}</h3>
-          <p className="text-gray-500 font-medium">${price}</p>
+          <p className="text-gray-500 font-medium">
+          {  < Currency value= {price}/>}
+        
+          </p>
         </div>
       </NavLink>
     </div>

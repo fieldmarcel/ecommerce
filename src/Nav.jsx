@@ -63,7 +63,7 @@ const Nav = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`sm:hidden fixed top-0 left-0 w-full h-1/2 bg-cyan-700 backdrop-blur  transition-transform duration-300 transform ${
+        className={`sm:hidden fixed top-0 left-0 w-full h-1/2 bg-blue-500 backdrop-blur  transition-transform duration-300 transform ${
           isOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
