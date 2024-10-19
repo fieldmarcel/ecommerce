@@ -12,8 +12,10 @@
 
 
 body {
- background-color: #eaedf2;
- 
+  body {
+    background-color: var(--token-aa303802-e5d1-4856-bfe5-30475052d91c); /* Light grey background */
+    color: var(--token-00af65c3-92fd-4f69-9228-cfe71d95f29a); /* Text color - black */
+} 
 }
 .navbar-link{
   font-family: "Outfit", sans-serif;

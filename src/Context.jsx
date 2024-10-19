@@ -11,7 +11,6 @@ const initialState = {
   isError: false,
   products: [],
   featureProducts: [], //empty array 
-  isSingleLoading:false,
   singleProduct:{},//empty object  as for that product in api its in an objject format
 };
 

@@ -7,3 +7,5 @@ const currency_format = ({value}) => {
 }
 
 export default currency_format;
+
+
