@@ -1,19 +1,17 @@
 import React from 'react';
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
-
 const Star = ({ rating, review }) => {
   // Creating an array for 5 stars
   const starrating = Array.from({ length: 5 }, (v, index) => {
-    console.log(index)
-    debugger;
+    
     return (
       <span key={index} className='flex items-center text-yellow-400 mr-1'>
         {rating >= index + 1 ? (// 0 t0 4  index of the current element (0 to 4
-          <FaStar className='' />
+          <FaStar  />
         ) : rating >= index + 0.5  ? ( //to display half star
-          <FaStarHalfAlt className='' />
+          <FaStarHalfAlt  />
         ) : (
-          <FaRegStar className='' />
+          <FaRegStar/>
         )}
       </span>
     );

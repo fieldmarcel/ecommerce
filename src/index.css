@@ -71,6 +71,10 @@ position: relative;
   top: -40%;
   left: 70%;
 }
+/* In your CSS file (e.g., styles.css) */
+.cartshadow {
+  box-shadow: 0 -10px 20px -5px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+}
 
 .mobile-navbar-btn{
   display:none;

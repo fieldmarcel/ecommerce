@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 import axios from "axios";
-import reducer from "./ProductReducer";
+import reducer from "../ProductReducer";
 
 const AppContext = createContext();
 //first api call for featured products

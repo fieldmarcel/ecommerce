@@ -9,16 +9,14 @@ const Photos = ({ imgs = [{}] }) => {
 
   return (
     <>
-      {/* Main Image Section */}
       <div className="mb-4 w-full sm:ml-8 sm:w-4/5">
         <img
           src={image.url}
           alt={image.filename}
-          className="w-full h-60 sm:h-96 object-cover rounded-md shadow-sm"
+          className="w-full h-60 sm:h-96 object-cover rounded-sm shadow-sm"
         />
       </div>
 
-      {/* Thumbnail Section */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4  sm:ml-8 w-full sm:w-4/5">
         {imgs.map((curElem) => (
           <figure
@@ -26,7 +24,6 @@ const Photos = ({ imgs = [{}] }) => {
             className="relative group cursor-pointer"
             onClick={() => handleImage(curElem)}
           >
-            {/* Thumbnail Image */}
             <img
               src={curElem.url}
               alt={curElem.filename}

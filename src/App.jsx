@@ -9,6 +9,8 @@ import Footer from './Footer';
 import Error from './Error';
 import Feature from './Feature';
 import SingleProduct from './SingleProduct';
+import Cart from './components/Cart';
+import Products from './Products';
 function App() {
   return (
     <div>
@@ -27,8 +29,10 @@ function App() {
         
         } />
           <Route path="/singleproduct/:id" element={<SingleProduct />} />
+          <Route path="/products" element={<Products />} />
 
-         
+          <Route path="/cart" element={<Cart />} />
+
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />

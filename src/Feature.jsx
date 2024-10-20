@@ -1,5 +1,5 @@
 import React from "react";
-import { useProductContext } from "./Context";
+import { useProductContext } from "./context/Context";
 import Product from "./Product";
 
 const Feature = () => {

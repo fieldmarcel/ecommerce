@@ -9,14 +9,15 @@ const PageNavigation = ({ title }) => {
   }
 
   return (
-    <div className='flex flex-col w-full'>
-      <div className='flex justify-start items-center text-gray-600'>
+    <div className='  hidden sm:flex sm:flex-col w-full'>
+      <div className='sm:flex sm:justify-start sm:items-center text-gray-600'>
         <span onClick={handleNavigate} className='cursor-pointer'>
           Home
         </span>
         / {title}
       </div>
-      <div className='w-full border-b border-gray-300 mt-2'></div>
+      <div className='w-full border-b border-gray-300 sm:mt-2'></div>
+
     </div>
   );
 }
