@@ -30,22 +30,20 @@ const SingleProduct = () => {
   }
 
   return (
-    <div className="container sm:mx-auto  px-4 sm:py-4">
+    <div className="container sm:mx-auto   px-4 sm:py-4">
       <PageNavigation title={name} />
 
       <div className="grid sm:grid-cols-2 sm:gap-16 gap-8 mt-8">
-        {/* Product Image Section */}
         <div className="product-images">
           <Photos imgs={image} />
         </div>
 
-        {/* Product Details Section */}
         <div className="product-data space-y-4">
           <h2 className="text-3xl font-bold">{name}</h2>
           
           <div className="flex items-center">
             <Star rating={stars} review={reviews} />
-            <p className="ml-2 text-gray-500">{reviews} Reviews</p>
+          
           </div>
 
           <div className="text-lg">

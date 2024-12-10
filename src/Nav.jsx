@@ -19,33 +19,33 @@ let menuRef= useRef();
   
 
   return (
-    <nav className="bg-indigo-50 sm:p-2 px-2 py-2  z-999 overflow-x-hidden">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="sticky top-0 left-0 right-0 bg-slate-50 sm:p-1  z-50 overflow-x-hidden">
+      <div className="  container mx-auto bg-slate-50 flex justify-between items-center">
         <div className="flex-shrink-0">
           <NavLink to="/">
-            <img src="" alt="shivanshu" className="h-12 text-red-700" />
+            <img src="" alt="shivanshu" className="h-12  text-red-700" />
           </NavLink>
         </div>
 
         {/* Desktop Menu */}
-        <ul className="navbar-list hidden sm:flex sm:flex-row justify-center items-center space-x-6 bg-blue-600 py-4 px-4 rounded-full">
+        <ul className="navbar-list hidden sm:flex sm:flex-row justify-center items-center space-x-6 py-4 px-4 rounded-full">
           <li>
-            <NavLink to="/" className="navbar-link text-white font-medium text-lg">
+            <NavLink to="/" className="navbar-link text-black font-medium text-lg">
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" className="navbar-link text-white font-medium text-lg">
+            <NavLink to="/about" className="navbar-link text-black font-medium text-lg">
               About
             </NavLink>
           </li>
           <li>
-            <NavLink to="/products" className="navbar-link text-white font-medium text-lg">
+            <NavLink to="/products" className="navbar-link text-black font-medium text-lg">
               Products
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" className="navbar-link text-white font-medium text-lg">
+            <NavLink to="/contact" className="navbar-link text-black font-medium text-lg">
               Contact
             </NavLink>
           </li>

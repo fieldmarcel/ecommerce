@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div className="flex sm:flex-row flex-col w-screen h-screen overflow-hidden">
+    <div className="flex sm:flex-row flex-col w-screen h-auto overflow-hidden">
       {/* Left Part: Single Image taking half the viewport width */}
       <div className="sm:w-1/2 w-full  h-full overflow-hidden">
         <img src="3.jpg" alt="" className="w-full h-full object-cover" />
